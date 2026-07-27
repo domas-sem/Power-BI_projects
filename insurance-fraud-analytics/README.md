@@ -12,7 +12,7 @@ then visualizes key fraud and risk indicators in an interactive Power BI dashboa
 - Power BI Desktop — dashboard design, DAX measures, interactive filtering
 
 ## Dashboard Preview
-![Dashboard](powerbi/dashboard_screenshot.png)
+![Dashboard](powerbi/insurance%20project%20dashboard%20screenshot.png)
 
 ## Key Features
 - KPI cards: Total Claims, Fraud Rate %, Avg Claim Amount, High Risk Claims Count
