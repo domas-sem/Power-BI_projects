@@ -11,7 +11,6 @@ import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 # -----------------------------
 # 1. KONFIGURACIJA / KINTAMIEJI
@@ -20,7 +19,6 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 FAILO_KELIAS = os.path.join(SCRIPT_DIR, "insurance_claims.csv")
 ISSKIRTIES_STULPELIS = "umbrella_limit"
 TIKSLO_STULPELIS = "fraud_reported"
-sns.set_style("whitegrid")
 
 # -----------------------------
 # 2. DUOMENU IKELIMAS
