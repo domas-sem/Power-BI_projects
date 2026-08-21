@@ -46,6 +46,20 @@ Main steps:
 - Created high-risk claim indicators through custom business rules
 - Exported the prepared dataset as `insurance_claims_sutvarkytas.csv`
 
+## Dashboard Preview
+
+### Page 1 — Insurance Claims & Fraud Analysis Dashboard
+
+![Insurance Claims & Fraud Analysis Dashboard](powerbi/dashboard_page_1.png)
+
+### Page 2 — Customer & Policy Overview
+
+![Customer & Policy Overview](powerbi/dashboard_page_2.png)
+
+### Page 3 — Fraud Risk Segmentation
+
+![Fraud Risk Segmentation](powerbi/dashboard_page_3.png)
+
 ## Power BI Report Pages
 
 ### 1. Insurance Claims & Fraud Analysis Dashboard
