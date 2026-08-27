@@ -182,5 +182,7 @@ insurance-fraud-analytics/
 ## Notes
 
 - The dataset is used for portfolio and fraud-pattern analysis
-- Fraud flags are analytical labels supplied with the dataset and do not represent verified fraud determinations
-- Dashboard figures update dynamically when users apply slicers or select visual elements
+
+## Author
+
+Created by [Domas](https://github.com/domas-sem) as part of a Power BI and data analytics portfolio.
