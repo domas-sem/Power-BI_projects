@@ -4,7 +4,7 @@ End-to-end insurance claims analytics project combining a Python data-preparatio
 
 The project analyses 1,000 insurance claims to identify fraud patterns, high-priority risk segments, customer and policy characteristics, and potential fraud exposure.
 
-![Customer & Policy Overview](powerbi/01-customer-policy-overview.png)
+![Insurance Claims & Fraud Analysis Dashboard](powerbi/01-claims-fraud-analysis.png)
 
 ## Project Overview
 
@@ -12,9 +12,9 @@ The workflow transforms a raw insurance claims dataset into a cleaned analytical
 
 The report is designed around three complementary analytical perspectives:
 
-- **Customer and policy overview** — customer demographics, policy mix, premiums, deductibles, and claim amounts.
-- **Claims and fraud analysis** — fraud rate, high-risk claims, incident-level patterns, policy-state comparisons, and age versus claim amount.
-- **Fraud risk segmentation** — high-priority policy/incident combinations, financial exposure, risk severity, and interactive root-cause exploration.
+- **Claims and fraud analysis** — fraud rate, high-risk claims, incident-level patterns, policy-state comparisons, and age versus claim amount
+- **Customer and policy overview** — customer demographics, policy mix, premiums, deductibles, and claim amounts
+- **Fraud risk segmentation** — high-priority policy/incident combinations, financial exposure, risk severity, and interactive root-cause exploration
 
 ## Tools Used
 
@@ -54,22 +54,9 @@ Main preparation steps:
 
 ## Dashboard Preview
 
-### 1. Customer & Policy Overview
-
-![Customer & Policy Overview](powerbi/01-customer-policy-overview.png)
-
-This page explores customer and policy characteristics, including:
-
-- Average annual premium, deductible, claim amount, and customer tenure
-- Annual premium versus total claim amount by gender
-- Customer distribution by gender and education level
-- Policy distribution by state
-- Fraud rate by customer age group
-- Interactive filtering by policy state, gender, and education level
-
 ### 1. Insurance Claims & Fraud Analysis Dashboard
 
-![Insurance Claims & Fraud Analysis](powerbi/02-claims-fraud-analysis.png)
+![Insurance Claims & Fraud Analysis Dashboard](powerbi/01-claims-fraud-analysis.png)
 
 This page provides a portfolio-level fraud monitoring view, including:
 
@@ -79,6 +66,19 @@ This page provides a portfolio-level fraud monitoring view, including:
 - Conditional formatting using data bars and risk-based backgrounds
 - Claim amount by customer age and fraud status
 - Interactive filtering by fraud status, incident severity, and policy state
+
+### 2. Customer & Policy Overview
+
+![Customer & Policy Overview](powerbi/02-customer-policy-overview.png)
+
+This page explores customer and policy characteristics, including:
+
+- Average annual premium, deductible, claim amount, and customer tenure
+- Annual premium versus total claim amount by gender
+- Customer distribution by gender and education level
+- Policy distribution by state
+- Fraud rate by customer age group
+- Interactive filtering by policy state, gender, and education level
 
 ### 3. Fraud Risk Segmentation
 
@@ -143,14 +143,14 @@ COUNTROWS(insurance_claims_sutvarkytas)
 
 ## Key Insights
 
-- The portfolio contains **1,000 total claims**.
-- **247 claims** are flagged as fraudulent, producing an overall **24.70% fraud rate**.
-- Fraudulent claims account for approximately **$14.9M in fraud exposure**.
-- Single-vehicle collisions and multi-vehicle collisions represent the largest fraud-exposure categories.
-- Fraud risk differs by policy coverage limit and incident type, enabling more targeted investigation priorities.
-- The highest-priority segment displayed is **250/500 coverage with single-vehicle collision**, with 51 fraudulent claims, a 36.96% fraud rate, and approximately $3.33M in fraud exposure.
-- Customers aged **55+** show the highest fraud rate in the dashboard’s age-group view.
-- The Decomposition Tree enables interactive exploration of the combinations contributing most to total fraud exposure.
+- The portfolio contains **1,000 total claims**
+- **247 claims** are flagged as fraudulent, producing an overall **24.70% fraud rate**
+- Fraudulent claims account for approximately **$14.9M in fraud exposure**
+- Single-vehicle collisions and multi-vehicle collisions represent the largest fraud-exposure categories
+- Fraud risk differs by policy coverage limit and incident type, enabling more targeted investigation priorities
+- The highest-priority segment displayed is **250/500 coverage with single-vehicle collision**, with 51 fraudulent claims, a 36.96% fraud rate, and approximately $3.33M in fraud exposure
+- Customers aged **55+** show the highest fraud rate in the dashboard’s age-group view
+- The Decomposition Tree enables interactive exploration of the combinations contributing most to total fraud exposure
 
 ## Dashboard Features
 
@@ -174,13 +174,13 @@ insurance-fraud-analytics/
 ├── insurance_data_cleaning.py
 └── powerbi/
     ├── Insurance Claims & Fraud Analysis Dashboard.pbix
-    ├── 01-customer-policy-overview.png
-    ├── 02-claims-fraud-analysis.png
+    ├── 01-claims-fraud-analysis.png
+    ├── 02-customer-policy-overview.png
     └── 03-fraud-risk-segmentation.png
 ```
 
 ## Notes
 
-- The dataset is used for portfolio and fraud-pattern analysis.
-- Fraud flags are analytical labels supplied with the dataset and do not represent verified fraud determinations.
-- Dashboard figures update dynamically when users apply slicers or select visual elements.
+- The dataset is used for portfolio and fraud-pattern analysis
+- Fraud flags are analytical labels supplied with the dataset and do not represent verified fraud determinations
+- Dashboard figures update dynamically when users apply slicers or select visual elements
